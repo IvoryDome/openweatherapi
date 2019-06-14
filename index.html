@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,49 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+        crossorigin="anonymous"></script>
 
 
-    
+
     <script src="main.js"></script>
 </head>
+
 <body>
 
-    <div class="weather-container">
+    <select id="cityList" onchange="pickCity();">
+        <option selected disabled>Select city</option>
+        <option value="Edinburgh">Edinburgh</option>
+        <option value="London">London</option>
+        <option value="New York">New York</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Sydney">Sydney</option>
+    </select>
+
+    <!-- <div class="dropdown">
+        <button onclick="pickCity()" class="dropbtn">Choose city</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Edinburgh</a>
+            <a href="#">London</a>
+            <a href="#">New York</a>
+            <a href="#">Los Angeles</a>
+            <a href="#">Sydney</a>
+            <a href="#">Paris</a>
+            <a href="#">Pyongyang</a>
+        </div>
+    </div> -->
+
+    <div id="weather" class="weather-container">
         <p class="name"></p>
         <img class="icon">
         <p class="weather"></p>
         <p class="temp">
-        <p class="pressure"></p>
-        <p class="humidity"></p>  
+            <p class="pressure"></p>
+            <p class="humidity"></p>
+            <p class="windspeed"></p>
     </div>
-    
+
 </body>
+
 </html>
