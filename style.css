@@ -14,25 +14,41 @@
 }
 
 .temp {
-    font-size: 60px;
+    font-size: 30px;
     margin: 0%;
     font-weight: bold;
 }
 
 .pressure {
-    font-size: 60px;
+    font-size: 30px;
     margin: 0%;
     font-weight: bold;
 }
 
 .humidity {
-    font-size: 60px;
+    font-size: 30px;
     margin: 0%;
     font-weight: bold;
 }
 
 .windspeed {
-    font-size: 60px;
+    font-size: 30px;
     margin: 0%;
     font-weight: bold;
+}
+
+.tempmin {
+    font-size: 30px;
+    margin: 0%;
+    font-weight: bold;
+}
+
+.tempmax {
+    font-size: 30px;
+    margin: 0%;
+    font-weight: bold;
+}
+
+#mapid {
+     height: 300px;
 }

@@ -8,6 +8,14 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
         crossorigin="anonymous"></script>
@@ -22,34 +30,40 @@
     <select id="cityList" onchange="pickCity();">
         <option selected disabled>Select city</option>
         <option value="Edinburgh">Edinburgh</option>
+        <option value="Paris">Paris</option>
+        <option value="Berlin">Berlin</option>
+        <option value="Rome">Rome</option>
+        <option value="Madrid">Madrid</option>
         <option value="London">London</option>
         <option value="New York">New York</option>
         <option value="Los Angeles">Los Angeles</option>
         <option value="Sydney">Sydney</option>
+        <option value="Pyongyang">Pyongyang</option>
+        <option value="Kinshasa">Kinshasa</option>
+        <option value="Bangui">Bangui</option>
+        <option value="Seoul">Seoul</option>
+        <option value="Warsaw">Warsaw</option>
+        <option value="Moscow">Moscow</option>
+
     </select>
 
-    <!-- <div class="dropdown">
-        <button onclick="pickCity()" class="dropbtn">Choose city</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#">Edinburgh</a>
-            <a href="#">London</a>
-            <a href="#">New York</a>
-            <a href="#">Los Angeles</a>
-            <a href="#">Sydney</a>
-            <a href="#">Paris</a>
-            <a href="#">Pyongyang</a>
-        </div>
-    </div> -->
+
+
+
 
     <div id="weather" class="weather-container">
         <p class="name"></p>
         <img class="icon">
         <p class="weather"></p>
         <p class="temp">
-            <p class="pressure"></p>
-            <p class="humidity"></p>
-            <p class="windspeed"></p>
+        <p class="pressure"></p>
+        <p class="humidity"></p>
+        <p class="windspeed"></p>
+        <p class="tempmin"></p>
+        <p class="tempmax"></p>
     </div>
+
+    <div id="mapid"></div>
 
 </body>
 
